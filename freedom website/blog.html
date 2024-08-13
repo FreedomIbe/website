@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Our Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="Sub-header">
+
+        <nav>
+            <a href="index.html"><img src="Images/delicious-cake-with-fruits-cream_23-2148972058.jpg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <img class="fa fa-times" src="Vacate.png" onclick="hideMenu()" alt="">
+                <ul> 
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>      
+                    <li><a href="Course.html">COURSE</a></li>
+                    <li><a href="Blog.html">PRODUCTS</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <img class="fa fa-bars"  src="whitebar.png" onclick="showMenu()" alt="">
+        </nav>
+
+        <h1>OUR PRODUCTS</h1>
+    </section>
+
+
+
+
+            
+            <div class="blog-right">
+                <h3> Categories of pastries and prices</h3>
+            <div>
+                <span><img src="Images/katie-rosario-QNyRp21hb5I-unsplash.jpg" height="100px" width="100px" alt=""></span>
+                <span>Birthday Cake</span>
+                <span>20,000 Naira</span>
+            </div>
+            <div>
+
+                <span><img src="Images/deva-williamson-pZZJwwNPy2k-unsplash(1).jpg"  height="100px" width="100px"></span>
+                <span>Wedding Cakes</span>
+                <span>50,000 Naira</span>
+            </div>
+            <div>
+                <span><img src="Images/david-holifield-g5bgYkKa8y0-unsplash.jpg"  height="100px" width="100px"></span>
+                <span>Party Cakes</span>
+                <span>15,000 Naira</span>
+            </div>
+            <div>
+                <span><img src="Images/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg" height="100px"  width="100px"></span>
+                <span>Pizza</span>
+                <span>5,000 Naira</span>
+            </div>
+            <div>
+                <span><img src="Images/rustic-meat-pie-baked-with-savory-onions-generated-by-ai_188544-9582.jpg"  height="100px" width="100px"></span>
+                <span>Meat-pie</span>
+                <span>700 Naira</span>
+            </div>
+            <div>
+                <span><img src="Images/burrito-with-meat-vegetables-it_188544-16138.jpg"  height="100px" width="100px" alt=""></span>
+                <span>sharwama</span>
+                <span>3000 Naira</span>
+            </div>
+            <div><span><img src="Images/popiah-deep-fried-spring-rolls_121826-1990.jpg" height="100px" width="100px" alt=""></span>
+                <span>springrolls</span>
+                <span>800 Naira</span>
+            </div>
+
+            
+            <div><span><img src="Images/close-up-food_1048944-18615429.jpg"  height="100px" width="100px" alt=""></span>
+                <span>Samosa</span>
+                <span>800 Naira</span>
+            </div>
+            </div>
+            
+        </div>
+    
+        <div class="comment-box">
+
+            <h3>Leave a comment</h3> 
+
+            <form class="comment-form">
+                <input type="text" placeholder="Enter Name">  
+                <input type="email" placeholder="Enter Email">    
+                <textarea  rows="5" placeholder="Your Comment">          
+                </textarea>  
+                <button type="submit" class="hero-btn red-btn">POST
+                 COMMENT</button>
+            </form>
+           </div>
+
+
+   
+        <!------Footer------->
+
+
+
+    <!--javascript for Toggle Menu--->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="alert.css">
+</head>
+<body>
+
+    <button class="place-order place-order--default">
+        <div class="default text">Place Order</div>
+        <div class="forklift">
+          <div class="upper"></div>
+          <div class="lower"></div>
+        </div>
+        <div class="box animation"></div>
+        <div class="done text">Done</div>
+      </button>
+
+
+      <script>
+const btn = document.querySelector(".place-order");
+
+btn.addEventListener("click", () => {
+  btn.classList.remove("place-order--default");
+  btn.classList.add("place-order--placing");
+  setTimeout(() => {
+    btn.classList.remove("place-order--placing");
+    btn.classList.add("place-order--done");
+  }, 4000);
+  setTimeout(() => {
+    btn.classList.remove("place-order--done");
+    btn.classList.add("place-order--default");
+  }, 6000);
+})
+      </script>
+</body>
+</html>

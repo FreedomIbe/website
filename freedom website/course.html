@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cources</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="Sub-header">
+
+        <nav>
+            <a href="index.html"><img src="Images/delicious-cake-with-fruits-cream_23-2148972058.jpg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <img class="fa fa-times" src="Images/Exit.png" onclick="hideMenu()" alt="">
+                <ul> 
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>      
+                    <li><a href="Course.html">COURSE</a></li>
+                    <li><a href="Blog.html">PRODUCTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <img class="fa fa-bars"  src="Images/BarIcon.png" onclick="showMenu()" alt="">
+        </nav>
+
+        <h1>Learn with us</h1>
+    </section>
+
+
+            <section class="Course">        
+                <div class="row">
+                    <div class="course-col">                            
+                        <section class="Course">
+                            <h1>Cources we offer</h1>
+                            <p>We differentiate our courses in three different levels</p>
+                   
+                           <div class="row">
+                   
+                               <div class="row">
+                                   <div class="Course-col">
+                                       <h3>Beginners</h3>
+                                       <p>
+
+                                        In this level we teach the cadets in basic baking such as baking of fruit cake
+                                        red velvet cake,coconut cake, zebra cake and making of icing sugar.                                       </p>
+                                   </div>
+                                   <div class="Course-col">
+                                       <h3>
+                                        Intermediate
+                                       </h3>
+                                       <p>
+                                        pizza,burgers,sharwama,hotdogs,meatpie,samosa and springrolls.
+                                        In this course we teach the cadets  another level of baking such as baking of 
+                                         </p>
+                                   </div>
+                                   <div class="Course-col">
+                                       <h3>Advanced</h3>
+                                       <p>
+                                        In this level we teach the cadets decoration of cakes, application of beads and making of smoothies
+                                       </p>
+                                   </div>
+
+                                   
+                               </div>
+                              
+                       </section>
+            
+                   
+                       
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

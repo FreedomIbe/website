@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/delicious-cake-with-fruits-cream_23-2148972058.jpg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <img class="fa fa-times" src="Images/Exit.png" onclick="hideMenu()" alt="">
+                <ul> 
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>      
+                    <li><a href="Course.html">COURSE</a></li>
+                    <li><a href="Blog.html">PRODUCTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <img class="fa fa-bars"  src="Images/whitebar.png" onclick="showMenu()" alt="">
+        </nav>
+
+
+        <div class="text-box">
+            <h1>STM CONFECTIONARIES</h1>
+            <p>
+  STM CONFECTIONARIES, an exciting new catering company specializing in farm-fresh organic foods prepared with amazing ingredients, offers
+  unparalleled venture, capital opporunity for right investors  
+
+              <br>
+               <a href="About.html" class="hero-btn">MORE</a>
+            </p>
+        </div>
+    </section> 
+    
+    <!--javascript for Toggle Menu--->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
